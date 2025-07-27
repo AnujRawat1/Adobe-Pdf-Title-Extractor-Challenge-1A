@@ -1,0 +1,425 @@
+{
+  "title": "Untitled Document",
+  "outline": [
+    {
+      "level": "H3",
+      "text": "What if every time you opened a PDF, it didn’t just sit there —it spoke to you ,",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "That’s the future we’re building — and we want you to help shape it.",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "In the Connecting the Dots Challenge , your mission is to reimagine the humble",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "PDF as an intelligent, interactive experience—one that understands structure ,",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "Kick things off by building the brains — extract structured outlines from",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "raw PDFs with blazing speed and pinpoint accuracy. Then, power it up",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "with on-device intelligence that understands sections and links related",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "It’s showtime! Build a beautiful, intuitive reading webapp using Adobe’s",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "PDF Embed API. You will be using your Round 1 work to design a",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "In a world flooded with documents, what wins is not more content — it’s",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "or insight whisperer — this is your stage.",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "It’s time to read between the lines. Connect the dots. And build a PDF",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "experience that feels like magic . Let’s go.",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "Challenge Theme: Connecting the Dots Through Docs",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "You're handed a PDF — but instead of simply reading it, you're tasked with",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "making sense of it like a machine would. Your job is to extract a structured",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "outline of the document — essentially the Title , and headings like H1 , H2 , and",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "This outline will be the foundation for the rest of your hackathon journey.",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "PDFs are everywhere — but machines don’t naturally understand their",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "structure. By building an outline extractor, you’re enabling smarter document",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "experiences, like semantic search, recommendation systems, and insight",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "What You Need to Build",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "\"title\": \"Understanding AI\",",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "{ \"level\": \"H1\", \"text\": \"Introduction\", \"page\": 1 },",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "{ \"level\": \"H2\", \"text\": \"What is AI?\", \"page\": 2 },",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "{ \"level\": \"H3\", \"text\": \"History of AI\", \"page\": 3 }",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "You Will Be Provided",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "1. A sample input PDF (e.g., sample.pdf)",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "2. A sample ground truth output (sample.json) for format clarity",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "3. Sample Dockerfile",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "4. Sample Solution",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "architecture. Since we will build and run the image on an AMD64",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "machine, your base image and any dependencies should support",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "linux/amd64. Optionally, you can include the following in your",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "Dockerfile to explicitly specify the platform: FROM --",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "```docker build --platform linux/amd64 -t",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "After building the image, we will run the solution using the run command",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "specified in the submitted instructions.",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "```docker run --rm -v $(pwd)/input:/app/input -v $(pwd)/output:/app/output --",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "network none mysolutionname:somerandomidentifier```",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "generating a corresponding filename.json in /app/output for each",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "≤ 10 seconds for a 50-page",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "Model size  ≤ 200MB (if used)",
+      "page": 5
+    },
+    {
+      "level": "H3",
+      "text": "Must run on CPU (amd64),",
+      "page": 5
+    },
+    {
+      "level": "H3",
+      "text": "your solution should run on",
+      "page": 5
+    },
+    {
+      "level": "H3",
+      "text": "the system with 8 CPUs and",
+      "page": 5
+    },
+    {
+      "level": "H3",
+      "text": "16 GB RAM configurations",
+      "page": 5
+    },
+    {
+      "level": "H3",
+      "text": "Heading Detection Accuracy (Precision +",
+      "page": 5
+    },
+    {
+      "level": "H3",
+      "text": "Performance (Time & Size Compliance)",
+      "page": 5
+    },
+    {
+      "level": "H3",
+      "text": "1. Git Project with a working Dockerfile in the root director and",
+      "page": 5
+    },
+    {
+      "level": "H3",
+      "text": "2. A working Dockerfile",
+      "page": 5
+    },
+    {
+      "level": "H3",
+      "text": "3. All dependencies installed within the container",
+      "page": 5
+    },
+    {
+      "level": "H3",
+      "text": "4. A README.md that explains:",
+      "page": 5
+    },
+    {
+      "level": "H3",
+      "text": "documentation purpose, your solution should run using the",
+      "page": 5
+    },
+    {
+      "level": "H3",
+      "text": "“Expected Execution” section above.",
+      "page": 5
+    },
+    {
+      "level": "H3",
+      "text": "headings in some PDFs break that assumption.",
+      "page": 5
+    },
+    {
+      "level": "H3",
+      "text": "deadline, you will be informed, when to make the repo public.",
+      "page": 6
+    },
+    {
+      "level": "H3",
+      "text": "You will build a system that acts as an intelligent document analyst, extracting",
+      "page": 7
+    },
+    {
+      "level": "H3",
+      "text": "and prioritizing the most relevant sections from a collection of documents based",
+      "page": 7
+    },
+    {
+      "level": "H3",
+      "text": "on a specific persona and their job-to-be-done.",
+      "page": 7
+    },
+    {
+      "level": "H3",
+      "text": "2. Document Collection : 3-10 related PDFs Persona Definition : Role",
+      "page": 7
+    },
+    {
+      "level": "H3",
+      "text": "description with specific expertise and focus areas",
+      "page": 7
+    },
+    {
+      "level": "H3",
+      "text": "3. Job-to-be-Done : Concrete task the persona needs to accomplish",
+      "page": 7
+    },
+    {
+      "level": "H3",
+      "text": "Document collection, persona and job-to-be-done can be very diverse. So, the",
+      "page": 7
+    },
+    {
+      "level": "H3",
+      "text": "solution that teams need to build needs to be generic to generalize to this",
+      "page": 7
+    },
+    {
+      "level": "H3",
+      "text": "school/college books, financial reports, news articles etc.)",
+      "page": 7
+    },
+    {
+      "level": "H3",
+      "text": "Salesperson, Journalist, Entrepreneur etc)",
+      "page": 7
+    },
+    {
+      "level": "H3",
+      "text": "Provide a literature review for a given topic and available research",
+      "page": 7
+    },
+    {
+      "level": "H3",
+      "text": "papers, What should I study for Organic Chemistry given the",
+      "page": 7
+    },
+    {
+      "level": "H3",
+      "text": "chemistry documents, Summarize the financials of corporation xyz",
+      "page": 7
+    },
+    {
+      "level": "H3",
+      "text": "given the detailed year end financial reports etc.)",
+      "page": 7
+    },
+    {
+      "level": "H3",
+      "text": "methodologies, datasets, and performance benchmarks\"",
+      "page": 7
+    },
+    {
+      "level": "H3",
+      "text": "on reaction kinetics\"",
+      "page": 8
+    },
+    {
+      "level": "H3",
+      "text": "1. Metadata:",
+      "page": 8
+    },
+    {
+      "level": "H3",
+      "text": "d. Processing timestamp",
+      "page": 8
+    },
+    {
+      "level": "H3",
+      "text": "2. Extracted Section:",
+      "page": 8
+    },
+    {
+      "level": "H3",
+      "text": "3. Sub-section Analysis:",
+      "page": 8
+    },
+    {
+      "level": "H3",
+      "text": "d. Page Number Constraints",
+      "page": 8
+    },
+    {
+      "level": "H3",
+      "text": "Sample input/output for testing",
+      "page": 9
+    },
+    {
+      "level": "H3",
+      "text": "How well selected sections match",
+      "page": 9
+    },
+    {
+      "level": "H3",
+      "text": "persona + job requirements with",
+      "page": 9
+    },
+    {
+      "level": "H3",
+      "text": "proper stack ranking",
+      "page": 9
+    },
+    {
+      "level": "H3",
+      "text": "Quality of granular subsection",
+      "page": 9
+    },
+    {
+      "level": "H3",
+      "text": "extraction and ranking",
+      "page": 9
+    }
+  ]
+}
